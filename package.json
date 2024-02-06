@@ -1,9 +1,9 @@
 {
-  "name": "202402062123",
+  "name": "myapp",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "tsc && nodemon ./bin/www"
+    "start": "tsc && env-cmd nodemon ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -15,6 +15,7 @@
     "@types/cookie-parser": "^1.4.6",
     "@types/express": "^4.17.21",
     "@types/morgan": "^1.9.9",
+    "env-cmd": "^10.1.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   }
