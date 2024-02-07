@@ -7,12 +7,12 @@ This code sets up an Express.js app with minimal TypeScript support.
 1. Download the code as a `.zip` archive.
 2. Extract the archive's contents into a new folder named, for example, `myapp`. (This is the name currently specified in `package.json`.)
 3. In `package.json` and in `bin/www` (which is actually a JavaScript file), replace `myapp` with the name of your application folder.
-4. Run `npm install` in this new folder.
-5. Create a new file named `.env` with the following initial content:
+4. Create a new file named `.env` in the root folder with the following initial content:
    ```env
    # Replace myapp with the name of your application
    DEBUG=myapp:*
    ```
+5. Run `npm install` in the root folder.
 
 ## Usage
 
@@ -34,7 +34,7 @@ This code sets up an Express.js app with minimal TypeScript support.
 │     └─ style.css
 ├─ src                   # TypeScript source tree root
 │  ├─ app.ts             # main application file
-│  └─ routes             # Express routers. The folder hierarchy should match the hierarchy of your REST API endpoints.
+│  └─ routes             # Express routers. The folder hierarchy should reflect the hierarchy of your REST API endpoints.
 │     ├─ index.ts
 │     └─ users.ts
 ├─ tsconfig.json         # TypeScript configuration
